@@ -1,0 +1,130 @@
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+
+git clone git@github.com:liliakharb/Json.git
+Cloning into 'Json'...
+Enter passphrase for key '/c/Users/Хрофт/.ssh/id_rsa':
+warning: You appear to have cloned an empty repository.
+
+ 6. Внутри локального JSON создать файл “new.json”.
+cd Json
+touch new.json
+
+ 7. Добавить файл под гит.
+git add new.json 
+(следим за файлом)
+
+
+ 8. Закоммитить файл.
+
+ git commit -m "add new.json"
+
+[main (root-commit) ab1c4c7] add new.json
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.json
+
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+
+git push 
+
+Enter passphrase for key '/c/Users/Хрофт/.ssh/id_rsa':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 218 bytes | 218.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:liliakharb/Json.git
+ * [new branch]      main -> main
+
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+{
+  "person": "Liliya",
+  "age": 32,
+  "number of pets": 0,
+  "salary": 1000
+}
+
+ 11. Отправить изменения на внешний репозиторий.
+
+ git commit -am "modify new.json"
+ git push
+
+
+ 12. Создать файл preferences.json
+
+ cat > preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+
+ cat > preferences.json
+{ "favorite move" : "Leon",
+"favourite TV show" : "7 kingdom",
+"favourite food" : "apples",
+"favourite season" : "summer",
+"country i would like to visit" : "Japan"}
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+
+cat > skills.json
+{ "skills" : "Functional testing.
+Quality control.
+QA testing.
+Comprehensive knowledge of Windows, Postman, DBeaver, VPN, JS"}
+
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+
+ git add .
+warning: in the working copy of 'preferences.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'skills.json', LF will be replaced by CRLF the next time Git touches it
+
+Хрофт@DESKTOP-G4HO6PD MINGW64 /e/LILYA/курсы материалы/тестирование/ДЗ/github/group_31_liliyakharbandzidzi/Json (main)
+$ git commit -m "add two files"
+[main 2bb8e60] add two files
+ 2 files changed, 9 insertions(+)
+ create mode 100644 preferences.json
+ create mode 100644 skills.json
+
+Хрофт@DESKTOP-G4HO6PD MINGW64 /e/LILYA/курсы материалы/тестирование/ДЗ/github/group_31_liliyakharbandzidzi/Json (main)
+$ git push
+Enter passphrase for key '/c/Users/Хрофт/.ssh/id_rsa':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 547 bytes | 547.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:liliakharb/Json.git
+   d0a4826..2bb8e60  main -> main
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+Хрофт@DESKTOP-G4HO6PD MINGW64 /e/LILYA/курсы материалы/тестирование/ДЗ/github/group_31_liliyakharbandzidzi/Json (main)
+$ git add bug_report.json
+
+Хрофт@DESKTOP-G4HO6PD MINGW64 /e/LILYA/курсы материалы/тестирование/ДЗ/github/group_31_liliyakharbandzidzi/Json (main)
+$ git commit -m "update bug_report.json
+> "
+[main ee1dbea] update bug_report.json
+ 1 file changed, 30 insertions(+), 24 deletions(-)
+
+Хрофт@DESKTOP-G4HO6PD MINGW64 /e/LILYA/курсы материалы/тестирование/ДЗ/github/group_31_liliyakharbandzidzi/Json (main)
+$ git push
+Enter passphrase for key '/c/Users/Хрофт/.ssh/id_rsa':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 582 bytes | 582.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:liliakharb/Json.git
+   c58e650..ee1dbea  main -> main
+
